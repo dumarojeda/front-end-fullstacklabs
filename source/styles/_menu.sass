@@ -1,6 +1,40 @@
 #wrapper-menu
   position: relative
   height: 100%
+  &.mode-minimal
+    -webkit-animation: mode-minimal 1s ease both
+    -moz-animation: mode-minimal 1s ease both
+    animation: mode-minimal 1s ease both
+    .menu
+      ul
+        li
+          -webkit-animation: hide-item 0.8s ease both
+          -moz-animation: hide-item 0.8s ease both
+          animation: hide-item 0.8s ease both
+    .logo
+      -webkit-transition: all 1s ease
+      -moz-transition: all 1s ease
+      transition: all 1s ease
+      img
+        -webkit-animation: static 0.8s ease both
+        -moz-animation: static 0.8s ease both
+        animation: static 0.8s ease both
+
+.back
+  width: 50px
+  height: 50px
+  background: $gray
+  border-radius: 50%
+  padding: 17px
+  position: absolute
+  top: -100px
+  left: 10px
+  cursor: pointer
+  -webkit-transition: all 1s ease
+  -moz-transition: all 1s ease
+  transition: all 1s ease
+  &.active
+    top: 10px
 
 .menu
   position: relative
@@ -19,12 +53,12 @@
       margin: 0 auto
       display: inline-block
       position: absolute
-      -webkit-animation: fade-item 1.5s ease backwards
-      -moz-animation: fade-item 1.5s ease backwards
-      animation: fade-item 1.5s ease backwards
-      -webkit-transition: opacity .5s ease
-      -moz-transition: opacity .5s ease
-      transition: opacity .5s ease
+      -webkit-animation: show-item 1.5s ease backwards
+      -moz-animation: show-item 1.5s ease backwards
+      animation: show-item 1.5s ease backwards
+      -webkit-transition: all .5s ease
+      -moz-transition: all .5s ease
+      transition: all .5s ease
       a
         color: $yellow
         .item

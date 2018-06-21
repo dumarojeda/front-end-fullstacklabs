@@ -22,9 +22,42 @@
     -moz-transform: scale(1)
     transform: scale(1)
 
-// Fade Items Menu
-+keyframes(fade-item)
+// Show Items Menu
++keyframes(show-item)
   0%
     opacity: 0
+    visibility: hidden
   100%
     opacity: 1
+    visibility: visible
+
+// Hide Items Menu
++keyframes(hide-item)
+  0%
+    opacity: 1
+    visibility: visible
+  100%
+    opacity: 0
+    visibility: hidden
+
+// Mode Minimal for Menu
++keyframes(mode-minimal)
+  0%
+    -webkit-transform: scale(1) translateY(0%)
+    -moz-transform: scale(1) translateY(0%)
+    transform: scale(1) translateY(0%)
+  10%
+    -webkit-transform: scale(1.1) translateY(6%)
+    -moz-transform: scale(1.1) translateY(6%)
+    transform: scale(1.1) translateY(6%)
+  100%
+    -webkit-transform: scale(0.5) translateY(-82%)
+    -moz-transform: scale(0.5) translateY(-82%)
+    transform: scale(0.5) translateY(-82%)
+
+// Animation static
++keyframes(static)
+  0%
+    display: inline-block
+  100%
+    display: block
