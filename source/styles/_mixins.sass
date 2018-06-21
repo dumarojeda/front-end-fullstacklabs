@@ -28,3 +28,14 @@
 =bp-custom($width, $px)
   @media screen and (#{$width}-width: $px)
     @content
+
+// Keyframes
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
