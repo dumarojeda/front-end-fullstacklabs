@@ -19,7 +19,5 @@ etc
 #Custom
 /css
 /js
-/images
-/fonts
-index.html
+*.html
 source/package-lock.json
