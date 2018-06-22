@@ -15,5 +15,5 @@ node_modules
 npm-debug.log
 bower_components
 etc
-dist
+
 source/package-lock.json
