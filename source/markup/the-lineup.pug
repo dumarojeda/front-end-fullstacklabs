@@ -1,31 +1,41 @@
 extends layouts/layout.pug
 
+block class
+  - bodyClass = "lineup-page"
+
 block content
   #wrapper-header
     .container
-      .menu-lineup
-        ul
-          li
-            a(href="/")
-              | Home
-          li
-            a.active(href="#")
-              | The Lineup
-          li
-            a(href="#")
-              | Michael's Profile
-          li
-            a(href="#")
-              | Michael's Stats
-      h1.main-title The Lineup
+      .col-sm-12
+        .menu-lineup
+          ul
+            li
+              a(href="/")
+                | Home
+            li
+              a.active(href="#")
+                | The Lineup
+            li
+              a(href="#")
+                | Michael's Profile
+            li
+              a(href="#")
+                | Michael's Stats
+        h1.main-title The Lineup
   #wrapper-content.inner
     .container
       .col-sm-8
         .content
-          h2.title Meet the team
+          h2.title.text-yellow.line-bottom Meet the team
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, dolores earum cupiditate minus maiores alias harum, corporis nisi quasi eius ipsum, quaerat officia quisquam dolorum libero laboriosam ex. Dolor, nihil accusamus modi vitae iste doloremque perferendis, ex, recusandae tempore velit aliquam id ipsum quia impedit dignissimos quae et eius dolore aspernatur consequuntur eum aliquid rerum. Harum tempora cum quidem, vitae voluptatum necessitatibus asperiores ducimus laudantium illum praesentium repellendus alias, sit, esse. Debitis odio ratione quisquam ab harum nobis ex autem facilis placeat perspiciatis illum cum alias corporis consequuntur, aperiam ea quo expedita blanditiis inventore quaerat temporibus. Velit eius vel eaque?
       .col-sm-4
         .sidebar
-          h3.title-2nd.uppercase Features
-          h4.title-3rd The Players
+          h3.title-2nd.uppercase.text-gray-light.margin-bottom Featured
+          h4.title-3rd.text-gray-medium The Players
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab veritatis aliquid, unde rem necessitatibus laboriosam laborum dolores iusto voluptatibus nemo. Saepe nostrum, reprehenderit eos qui quo, voluptate illo ducimus officiis.
+          h4.title-3rd.text-gray-medium The Looney Tunes
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab veritatis aliquid, unde rem necessitatibus laboriosam laborum dolores iusto voluptatibus nemo. Saepe nostrum, reprehenderit eos qui quo, voluptate illo ducimus officiis.
+
+  #wrapper-footer.center
+    p SPACE JAM, characters, names, and all related.
+    p Indicia are trademarks of Warner Bros. © 1996 - 2018
