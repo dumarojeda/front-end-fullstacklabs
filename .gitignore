@@ -16,9 +16,4 @@ npm-debug.log
 bower_components
 etc
 dist
-
-#Custom
-/css
-/js
-*.html
 source/package-lock.json
