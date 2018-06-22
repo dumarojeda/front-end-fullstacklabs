@@ -2,6 +2,7 @@
 
 // Dependencies
 const gulp = require('gulp');
+const deploy = require('gulp-gh-pages');
 const browserSync = require('browser-sync').create();
 
 const pug = require('gulp-pug');
@@ -93,4 +94,10 @@ gulp.task('default', ['markup', 'styles', 'scripts'], done => {
     gulp.start('serve');
     gulp.start('watch');
   done();
+});
+
+// Deploy
+gulp.task('deploy', done => {
+  return gulp.src("./**/*")
+    .pipe(deploy())
 });

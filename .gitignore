@@ -19,5 +19,4 @@ etc
 #Custom
 /css
 /js
-*.html
 source/package-lock.json
