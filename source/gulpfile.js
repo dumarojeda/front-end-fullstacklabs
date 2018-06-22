@@ -17,7 +17,7 @@ const pump = require('pump');
 // Setup
 const config = {
   src: './',
-  dest: '../',
+  dest: '../dist/',
   javascript : [
     './bower_components/jquery/dist/jquery.min.js',
     './javascripts/script.js'
@@ -57,7 +57,7 @@ gulp.task('styles', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./../css/'));
+    .pipe(gulp.dest('./../dist/css/'));
 });
 
 // Javscript Task
@@ -66,7 +66,7 @@ gulp.task('scripts', (cb) => {
     gulp.src(config.javascript),
     concat('script.js'),
     uglify(),
-    gulp.dest('./../js/')
+    gulp.dest('./../dist/js/')
   ],
     cb
   );
@@ -77,7 +77,7 @@ gulp.task('serve', () => {
   browserSync.init({
     open: false,
     notify: false,
-    files: ['./**/*'],
+    files: ['./dist/**/*'],
     server: config.dest
   });
 });
