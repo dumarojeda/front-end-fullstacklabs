@@ -12,16 +12,38 @@ block content
             li
               a(href="/")
                 | Home
-            li
+            li.lineup
               a.active(href="#")
                 | The Lineup
-            li
+            li.profile
               a(href="#")
                 | Michael's Profile
-            li
+            li.stats
               a(href="#")
                 | Michael's Stats
+        .team
+          ul
+            li
+              a(href="#" data-name="Michael" data-lastname="Jordan" data-bg="bg-arena.jpg")
+                img(src="images/michael-jordan.jpg", alt="Michael Jordan")
+            li
+              a(href="#" data-name="Charles" data-lastname="Barkley" data-bg="bg-arena.jpg")
+                img(src="images/michael-jordan.jpg", alt="Michael Jordan")
+            li
+              a(href="#" data-name="Larry" data-lastname="Bird" data-bg="bg-arena.jpg")
+                img(src="images/michael-jordan.jpg", alt="Michael Jordan")
+            li
+              a(href="#" data-name="Muggsy" data-lastname="Bogues" data-bg="bg-arena.jpg")
+                img(src="images/michael-jordan.jpg", alt="Michael Jordan")
+            li
+              a(href="#" data-name="Shawn" data-lastname="Bradley" data-bg="bg-arena.jpg")
+                img(src="images/michael-jordan.jpg", alt="Michael Jordan")
+            li
+              a(href="#" data-name="Patrick" data-lastname="Ewing" data-bg="bg-arena.jpg")
+                img(src="images/michael-jordan.jpg", alt="Michael Jordan")
         h1.main-title The Lineup
+        h2.name-player.title.text-yellow.line-bottom Michael Jordan
+        a(href="#").button Vote
   #wrapper-content.inner
     .container
       .col-sm-8
