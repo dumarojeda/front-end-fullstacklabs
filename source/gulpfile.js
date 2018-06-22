@@ -98,6 +98,6 @@ gulp.task('default', ['markup', 'styles', 'scripts'], done => {
 
 // Deploy
 gulp.task('deploy', done => {
-  return gulp.src("./**/*")
+  return gulp.src("./dist/**/*")
     .pipe(deploy())
 });
