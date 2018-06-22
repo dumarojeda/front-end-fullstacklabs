@@ -1,0 +1,140 @@
+#wrapper-menu
+  position: relative
+  height: 100%
+  &.mode-minimal
+    -webkit-animation: mode-minimal 1s ease both
+    -moz-animation: mode-minimal 1s ease both
+    animation: mode-minimal 1s ease both
+    .menu
+      ul
+        li
+          -webkit-animation: hide-item 0.8s ease both
+          -moz-animation: hide-item 0.8s ease both
+          animation: hide-item 0.8s ease both
+    .logo
+      -webkit-transition: all 1s ease
+      -moz-transition: all 1s ease
+      transition: all 1s ease
+      img
+        -webkit-animation: static 0.8s ease both
+        -moz-animation: static 0.8s ease both
+        animation: static 0.8s ease both
+
+.back
+  width: 50px
+  height: 50px
+  background: $gray
+  border-radius: 50%
+  padding: 17px
+  position: absolute
+  top: -100px
+  left: 10px
+  cursor: pointer
+  -webkit-transition: all 1s ease
+  -moz-transition: all 1s ease
+  transition: all 1s ease
+  z-index: 5
+  &.active
+    top: 10px
+
+.menu
+  position: relative
+  text-align: center
+  height: 570px
+  width: 570px
+  margin: 0 auto
+  top: 50%
+  transform: translateY(-50%)
+  ul
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      width: 70px
+      text-align: center
+      margin: 0 auto
+      display: inline-block
+      position: absolute
+      -webkit-animation: show-item 1.5s ease backwards
+      -moz-animation: show-item 1.5s ease backwards
+      animation: show-item 1.5s ease backwards
+      -webkit-transition: all .5s ease
+      -moz-transition: all .5s ease
+      transition: all .5s ease
+      a
+        color: $yellow
+        .item
+          font-size: 12px
+          line-height: 12px
+          margin: 0 0 5px 0
+      &:nth-child(1), &:nth-child(6)
+        top: 40%
+      &:nth-child(2), &:nth-child(5)
+        top: 16%
+      &:nth-child(3), &:nth-child(4)
+        top: 3%
+      &:nth-child(7), &:nth-child(10)
+        bottom: 18%
+      &:nth-child(8), &:nth-child(9)
+        bottom: 3%
+
+      &:nth-child(1)
+        left: 1%
+      &:nth-child(2), &:nth-child(10)
+        left: 10%
+      &:nth-child(3), &:nth-child(9)
+        left: 30%
+      &:nth-child(4), &:nth-child(8)
+        right: 30%
+      &:nth-child(5), &:nth-child(7)
+        right: 9%
+      &:nth-child(6)
+        right: 0
+
+      &:nth-child(7)
+        -webkit-animation-delay: 3s 
+        animation-delay: 3s
+      &:nth-child(8)
+        -webkit-animation-delay: 3.2s 
+        animation-delay: 3.2s
+      &:nth-child(9)
+        -webkit-animation-delay: 3.2s 
+        animation-delay: 3.2s
+      &:nth-child(10)
+        -webkit-animation-delay: 3.3s 
+        animation-delay: 3.3s
+      &:nth-child(1)
+        -webkit-animation-delay: 3.4s 
+        animation-delay: 3.4s
+      &:nth-child(2)
+        -webkit-animation-delay: 3.5s
+        animation-delay: 3.5s
+      &:nth-child(3)
+        -webkit-animation-delay: 3.6s 
+        animation-delay: 3.6s
+      &:nth-child(4)
+        -webkit-animation-delay: 3.7s 
+        animation-delay: 3.7s
+      &:nth-child(5)
+        -webkit-animation-delay: 3.8s 
+        animation-delay: 3.8s
+      &:nth-child(6)
+        -webkit-animation-delay: 3.9s 
+        animation-delay: 3.9s
+    &:hover li
+      opacity: 0.4
+      &:hover
+        opacity: 1
+
+.logo
+  position: absolute
+  margin: 0 auto
+  width: 350px
+  top: 50%
+  left: 0
+  right: 0
+  transform: translateY(-50%)
+  img
+    -webkit-animation: logo-rotate 1.5s 1.3s ease both
+    -moz-animation: logo-rotate 1.5s 1.3s ease both
+    animation: logo-rotate 1.5s 1.3s ease both

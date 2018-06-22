@@ -1,0 +1,24 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Ignore cache
+/.sass-cache
+/.cache
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Application specific files
+node_modules
+npm-debug.log
+bower_components
+etc
+dist
+
+#Custom
+/css
+/js
+*.html
+source/package-lock.json

@@ -1,0 +1,22 @@
+{
+  "name": "front-end-fullstacklabs",
+  "description": "Test Front-end for FullStackLabs",
+  "main": "",
+  "authors": [
+    "Dumar Ojeda - dumarojeda@gmail.com"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dumarojeda/front-end-fullstacklabs",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap-sass-grid": "^4.0.1"
+  }
+}
