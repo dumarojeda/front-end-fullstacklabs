@@ -1,5 +1,8 @@
 extends layouts/layout.pug
 
+block class
+  - bodyClass = "home-page"
+
 block content
   #wrapper-menu
     .menu
@@ -50,9 +53,8 @@ block content
     img(src="images/back.svg", alt="Back Home")
   #wrapper-content.items
     .container
-      h2.title
+      h2.title.text-yellow.margin-bottom
       .content
-  #wrapper-footer.fixed
-    | SPACE JAM, characters, names, and all related.
-    br
-    | Indicia are trademarks of Warner Bros. © 1996 - 2018
+  #wrapper-footer
+    p SPACE JAM, characters, names, and all related.
+    p Indicia are trademarks of Warner Bros. © 1996 - 2018
